@@ -1,0 +1,220 @@
+# Задание 1
+
+# a = float(input("Введите a"))
+# b = float(input("Введите b"))
+# if a>b:
+#     print("Первое больше")
+# elif b>a:
+#     print("Второе больше")
+# else:
+#     print("Числа равны")
+
+
+# Задание 2
+
+# a = int(input("Введите a"))
+# b = int(input("Введите b"))
+# if a>b:
+#     print("Первое больше")
+# elif b>a:
+#     print("Второе больше")
+# else:
+#     print("Числа равны")
+
+
+# Задание 3
+
+# k = 0
+# s123 = '0123456789'
+# ss = ''
+# s = str(input("Введите строку"))
+# for x in range(len(s)-1):
+#     for i in range(10):
+#         if s[x]==s123[i]:
+#             k += 1
+#     if k==1:
+#         ss = ss+s[x]+' '
+#         k = 0
+#     else:
+#         ss = ss+s[x]
+# print(s)
+# print(ss)
+
+
+# Задание 4
+
+# j = 0
+# spisok = '123456789'
+# stroka1 = ''
+# stroka2 = ''
+# N = int(input("Введите число "))
+# stroka3 = ' '*N + '1'
+# print(stroka3)
+# for i in range(1, N):
+#     if N<=1:
+#         break
+#     stroka1 = stroka1 + ' '*(N-i)
+#     while len(stroka1)!=N+1:
+#         stroka1 = stroka1 + spisok[j]
+#         j = j + 1
+#     j = 0
+
+#     while len(stroka2)!=i:
+#         stroka2 = spisok[j] + stroka2
+#         j = j + 1
+#     j = 0
+#     print(stroka1+stroka2)
+#     stroka1 = ''
+#     stroka2 = ''
+#     ################
+# n = N
+# if N>1:
+#     for i in range(1, N):
+#         j = 0
+#         stroka1 = stroka1 + ' '*(j+1+i)
+#         while len(stroka1)!=N+1:
+#             stroka1 = stroka1 + spisok[j]
+#             j = j + 1
+#         j = 0
+
+#         while len(stroka2)!=n-2:
+#             stroka2 = spisok[j] + stroka2
+#             j = j + 1
+#         n=n-1
+
+#         print(stroka1+stroka2)
+#         stroka1 = ''
+#         stroka2 = ''
+# stroka3 = ' '*N + '1' 
+
+# Задание 8
+
+# d = {1: 'Первая', 2: 'Первая', 3: 'Первая', 4: 'Первая', 5: 'Вторая', 6: 'Вторая', 7: 'Вторая', 8: 'Вторая', 9: 'Вторая', 10: 'Третья', 11: 'Третья'}
+# a = int(input("Введите номер класса "))
+# print(d.get(a))
+
+# Задание 9
+
+# a = input("Введите на английском языке КАПСОМ ")
+# dictt = {'A': 65, 'B': 66, 'C': 67, 'D': 68, 'E': 69,
+#   'F': 70, 'G': 71, 'H': 72, 'I': 73, 'J': 74, 'K': 75,
+#   'L': 76, 'M': 77, 'N': 78, 'O': 79, 'P': 80, 'Q': 81,
+#   'R': 82, 'S': 83, 'T': 84, 'U': 85, 'V': 86, 'W': 87,
+#   'X': 88, 'Y': 89, 'Z': 90, ' ': 127}
+# for i in range(len(a)):
+#     print(dictt.get(a[i]))
+
+# Задание 10
+
+# summ = 0
+# a = input("Введите на английском языке КАПСОМ ")
+# dictt = {'A': 65, 'B': 66, 'C': 67, 'D': 68, 'E': 69,
+#   'F': 70, 'G': 71, 'H': 72, 'I': 73, 'J': 74, 'K': 75,
+#   'L': 76, 'M': 77, 'N': 78, 'O': 79, 'P': 80, 'Q': 81,
+#   'R': 82, 'S': 83, 'T': 84, 'U': 85, 'V': 86, 'W': 87,
+#   'X': 88, 'Y': 89, 'Z': 90, ' ': 127}
+# for i in range(len(a)):
+#     summ += dictt.get(a[i])
+# print(summ)
+
+# Задание 12
+
+# a=[]
+# i=0
+# c=int(input('Введите количество элементов списка '))
+# while i<c:
+#     ae=int(input('Введите элемент '))
+#     a.append(ae)
+#     i=i+1
+# a=sorted(a)
+# print(a)
+# i=0
+# ae=int(input('Введите необходимый элемент для проверки '))
+# while i<c:
+#     if ae!=a[i]:
+#         i=i+1
+#     else:
+#         print('Элемент существует, он на позиции ' + str(i))
+#         break
+# else:
+#     print('Элемент не обнаружен ')
+
+# Задание 13
+
+# a=[]
+# i=0
+# c=int(input('Введите количество элементов списка '))
+# while i<c:
+#     ae=int(input('Введите элемент '))
+#     a.append(ae)
+#     i=i+1
+# a=sorted(a)
+# print(a)
+# i=0
+# ae=int(input('Введите необходимый элемент для проверки '))
+# for i in a:
+#      if a[i - 1] == i:
+#         print(i, a[i - 1])
+# else:
+#    print('Элемент не обнаружен ')
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+"""
+# 1, 2
+a = float(input(""))
+b = float(input(""))
+if a > b:
+    print(str(a) + ' > ' + str(b))
+elif a < b:
+    print(str(a) + ' < ' + str(b))
+else :
+    print(str(a) + ' = ' + str(b))
+
+# 3
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+S = input("Enter string: ")
+i = 0
+buf = ''
+while 1:
+    if i == len(S):
+        break
+    buf += S[i]
+    if S[i] == '1' or S[i] == '2' or S[i] == '3' or S[i] == '4' or S[i] == '5' or S[i] == '6' or S[i] == '7' or S[i] == '8' or S[i] == '9' or S[i] == '0' and S[i+1]!=')' :
+        buf += ' '
+    i+=1
+S = buf
+print(S)
+
+#8
+number = int(input("Enter class number: "))
+if number > 0 and number < 5:
+    print('1')
+elif number > 4 and number < 10:
+    print('2')
+else:
+    print('3')
+
+#9
+S = input("Enter string: ")
+for i in range(len(S)):
+    print(ord(S[i]))
+
+#10
+S = input("Enter string: ")
+sum = 0
+for i in range(len(S)):
+    sum += ord(S[i])
+print("Сумма кодовэлементов строки: " + str(sum))
+
+#11
+S = {4: '7', 7:'8', 1:'9', 2:'2', 5:'0',3:'1'}
+buf = []
+for k,v in S.items():
+    buf.append(k)
+buf.sort()
+print([S[buf[i]] for i in range(len(buf))])
+"""
